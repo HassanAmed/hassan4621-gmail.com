@@ -14,17 +14,17 @@ function Item() {
 }
 // used to avoid redundant code as url follow same pattren except only category name + number of pages for each category
 let categories = [
-    { name: 'fresh-food', pages: 52 },
-    { name: 'bakery', pages: 11 },
-    { name: 'frozen-food', pages: 14 },
-    { name: 'food-cupboard', pages: 105 },
-    { name: 'drinks', pages: 50 },
-    { name: 'baby', pages: 15 },
-    { name: 'health-and-beauty', pages: 66 },
-    { name: 'pets', pages: 12 },
-    { name: 'household', pages: 15 },
-    { name: 'home-and-ents', pages: 72 },
-    { name: 'easter', pages: 13 }
+    { name: 'fresh-food', pages: 1 },
+    { name: 'bakery', pages: 1 },
+    // { name: 'frozen-food', pages: 14 },
+    // { name: 'food-cupboard', pages: 105 },
+    // { name: 'drinks', pages: 50 },
+    // { name: 'baby', pages: 15 },
+    // { name: 'health-and-beauty', pages: 66 },
+    // { name: 'pets', pages: 12 },
+    // { name: 'household', pages: 15 },
+    // { name: 'home-and-ents', pages: 72 },
+    // { name: 'easter', pages: 13 }
 ]
 for (let itr = 0; itr < categories.length; itr++) {
     for (let i = 1; i <= categories[itr].pages; i++) {
@@ -60,8 +60,10 @@ for (let itr = 0; itr < categories.length; itr++) {
                 });
                 allData = [...itemsArray, ...allData];
                 // console.log(allData);
-                // console.log(allData.length);
+                console.log(allData);
             }
         });
     }
 }
+
+
